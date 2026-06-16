@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MobileDB — Support</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "Segoe UI", sans-serif;
+    background: linear-gradient(180deg, #0b1220 0%, #0f1b2e 50%, #0a141f 100%);
+    color: #fff; min-height: 100vh; line-height: 1.6;
+    display: flex; flex-direction: column; align-items: center;
+    padding: 48px 24px;
+  }
+  .logo {
+    width: 96px; height: 96px; border-radius: 22px;
+    background: linear-gradient(160deg, #2e6cf6, #1b3a8a);
+    box-shadow: 0 0 0 1px rgba(255,255,255,.08), 0 16px 50px rgba(46,108,246,.45);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 24px; font-size: 44px;
+  }
+  h1 { font-size: 30px; font-weight: 800; margin-bottom: 6px; text-align: center; }
+  .tag { color: #9fb4d4; margin-bottom: 36px; text-align: center; }
+  .card {
+    background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.08);
+    border-radius: 20px; padding: 28px; max-width: 620px; width: 100%; margin-bottom: 20px;
+  }
+  h2 { font-size: 20px; margin-bottom: 12px; }
+  p, li { color: #d7e1f0; margin-bottom: 10px; }
+  ul { padding-left: 20px; }
+  a { color: #5ab4ff; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .email { font-size: 18px; font-weight: 700; }
+  code { background: rgba(255,255,255,.08); padding: 1px 6px; border-radius: 6px; font-size: 14px; }
+  footer { color: #6b7a96; font-size: 13px; margin-top: 24px; text-align: center; }
+</style>
+</head>
+<body>
+  <div class="logo">🐘</div>
+  <h1>MobileDB</h1>
+  <p class="tag">A native PostgreSQL client for your iPhone</p>
+
+  <div class="card">
+    <h2>Support</h2>
+    <p>Need help, hit a bug, or have a feature idea? Get in touch.</p>
+    <p class="email">📧 <a href="mailto:rinatjkeee666@gmail.com">rinatjkeee666@gmail.com</a></p>
+    <p>We typically reply within a couple of days.</p>
+  </div>
+
+  <div class="card">
+    <h2>Getting started</h2>
+    <ul>
+      <li><b>Add a connection</b> — host, port, database, user, password. Credentials are stored in the iOS Keychain.</li>
+      <li><b>TLS</b> — require, allow self-signed, or disable, per connection.</li>
+      <li><b>SSH tunnel</b> — reach databases behind a bastion; the app opens the tunnel itself, with trust-on-first-use host-key pinning.</li>
+      <li><b>Browse</b> — schema → table → row, with search, sort, filtering, and foreign-key jumps.</li>
+      <li><b>Query</b> — SQL editor with autocomplete, history, saved queries, and CSV/JSON export.</li>
+      <li><b>Stay safe</b> — tag a connection as prod (red banner) and open it read-only when you just want to look.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>FAQ</h2>
+    <p><b>Where do my credentials go?</b> Into the iOS Keychain on your device. There is no backend — the app connects straight from your phone to your database.</p>
+    <p><b>Does it send my data anywhere?</b> No. See our <a href="privacy.html">Privacy Policy</a>.</p>
+    <p><b>Which databases are supported?</b> PostgreSQL today. The data layer is engine-agnostic, so more may come.</p>
+    <p><b>Can't connect?</b> Check that your server is reachable from the device's network, TLS mode matches your server, and—if using SSH—that the tunnel host and key are correct.</p>
+  </div>
+
+  <footer>© 2026 Rinat Maltsev. All rights reserved.</footer>
+</body>
+</html>
