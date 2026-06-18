@@ -28,9 +28,9 @@
 <body>
   <div class="card">
     <h1>Privacy Policy</h1>
-    <p class="updated">MobileDB · Last updated 16 June 2026</p>
+    <p class="updated">MobileDB · Last updated 18 June 2026</p>
 
-    <p>Your privacy matters. This policy explains how MobileDB ("the app") handles your information. In short: <b>the app does not collect, store, or share any personal data, and there is no backend server.</b></p>
+    <p>Your privacy matters. This policy explains how MobileDB ("the app") handles your information. In short: <b>the app does not collect any personal data and there is no backend server.</b> The only time information leaves your device is when <i>you</i> connect to your own database servers, or when <i>you</i> choose to enable the optional AI assistant described below.</p>
 
     <h2>No data collection</h2>
     <p>The app does not collect your name, email, location, contacts, usage analytics, or advertising identifiers. There are no third-party analytics or advertising SDKs.</p>
@@ -40,6 +40,11 @@
 
     <h2>Direct connections only</h2>
     <p>MobileDB connects <b>directly</b> from your device to the database servers and SSH hosts that <i>you</i> configure. Your queries, results, and any data you view or edit travel only between your device and your own servers. The developer operates no servers and never sees this traffic. Connections use TLS and/or an SSH tunnel as you configure them.</p>
+
+    <h2>Optional AI assistant</h2>
+    <p>MobileDB includes an optional "Ask AI" feature that is <b>off until you set it up</b>. To use it you provide your own API key for an AI provider you choose (for example OpenAI, Anthropic/Claude, DeepSeek, OpenRouter, or any OpenAI-compatible endpoint). Your API key is stored only in the iOS <b>Keychain</b> on your device.</p>
+    <p>When you ask the assistant a question, the app sends — directly from your device to the provider you configured — your database <b>structure only</b> (table and column names, data types, and relationships), your question, and the current conversation. This gives the model the context it needs to write SQL.</p>
+    <p>The app does <b>not</b> send your row data, query results, passwords, or connection secrets to the AI provider. Before the assistant makes its first request, the app shows a disclosure you must accept. Your use of a provider is subject to that provider's own terms and privacy policy, and any usage is billed to your own account. The developer operates no AI servers and never sees this traffic.</p>
 
     <h2>Data stored on your device</h2>
     <p>Saved connections, query history, and saved queries are stored locally on your device only. Deleting the app removes this data.</p>
